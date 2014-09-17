@@ -1,1 +1,15 @@
 {{ words.greeting }}
+{{words.wholeTrie}}
+{{words.sayHello()}}
+
+<form ng-submit="words.addWord(newWord)">
+  <input type="text" ng-model="newWord.name" placeholder="Enter a word">
+  <input type="text" ng-model="newWord.description" placeholder="Enter a definition">
+  <button>Save</button>
+
+</form>
+
+<div ng-repeat="word in words.arrayWords">
+  {{word.name}}
+  {{word.description}}
+</div>

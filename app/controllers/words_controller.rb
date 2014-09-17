@@ -32,7 +32,7 @@ class WordsController < ApplicationController
   end
 
   def word_params
-    params.require(:word).permit(:title, :description, :complete)
+    params.require(:word).permit(:name, :description)
   end
 
   def render_main_layout_if_format_html
