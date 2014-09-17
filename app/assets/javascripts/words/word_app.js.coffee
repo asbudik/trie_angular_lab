@@ -1,5 +1,5 @@
 angular.module("WordApp", [
   "WordRouter",
-  "WordCtrls",
+  "WordControllers",
   "WordFactories"
 ])
